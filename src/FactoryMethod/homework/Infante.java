@@ -72,7 +72,7 @@ public class Infante implements IAlgo {
 
     @Override
     public void showAlgo() {
-        System.out.println(" ** Boleto standard **");
+        System.out.println(" ** Boleto Infante **");
         base.showInfo();
         des.showAlgo();
         ori.showAlgo();

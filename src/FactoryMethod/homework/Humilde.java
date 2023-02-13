@@ -81,7 +81,7 @@ public class Humilde implements IAlgo {
 
     @Override
     public void showAlgo() {
-        System.out.println(" ** Boleto standard **");
+        System.out.println(" ** Boleto Humilde **");
         base.showInfo();
         des.showAlgo();
         ori.showAlgo();

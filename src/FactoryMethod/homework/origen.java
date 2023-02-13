@@ -30,6 +30,6 @@ public class origen {
     }
     public void showAlgo() {
         System.out.println("Desde:");
-        System.out.println("Origen(pais): "+pais+"Ciudad: "+ciudad+"Aeropuerto"+aeropuerto);
+        System.out.println("Origen(pais): "+pais+" Ciudad: "+ciudad+" Aeropuerto: "+aeropuerto);
     }
 }
