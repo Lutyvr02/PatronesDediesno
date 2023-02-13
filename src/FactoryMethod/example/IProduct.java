@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethod.example;
 
 public interface IProduct {
     void create();

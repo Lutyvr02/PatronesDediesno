@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethod.example;
 
 public class Concretecreator1 extends Creator {
     @Override

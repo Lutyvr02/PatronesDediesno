@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethod.example;
 
 public class Client {
     public static void main(String[] ars) {
