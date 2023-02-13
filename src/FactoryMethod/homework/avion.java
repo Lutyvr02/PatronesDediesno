@@ -41,6 +41,6 @@ public class avion {
     private int numasientos;
 
     public void showAlgo() {
-        System.out.println("Marca: "+marca+"Capacidad"+capacidad+"modelo"+modelo+"Numero de asientos: "+numasientos);
+        System.out.println("Marca: "+marca+", Capacidad: "+capacidad+", Modelo: "+modelo+", Numero de asientos: "+numasientos);
     }
 }
