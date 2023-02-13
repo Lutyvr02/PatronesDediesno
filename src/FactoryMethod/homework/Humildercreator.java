@@ -33,6 +33,7 @@ public class Humildercreator extends CreatorAlgo{
 
         avion avia = new avion();
 
+        avia.setNumasientos(300);
         avia.setCapacidad(200);
         avia.setMarca("Lutys air");
         avia.setModelo("123123- fdasdhasda- 12312");
