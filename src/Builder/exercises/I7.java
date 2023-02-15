@@ -2,16 +2,14 @@ package Builder.exercises;
 
 public class I7 extends buildercompu{
 
-
-
     @Override
     public void buildMouse() {
-        super.getComputadora().setMouse("uadsasdmdasdasdasdadinos");
+        super.getComputadora().setMouse("Luminos");
     }
 
     @Override
     public void buildMemoria() {
-        super.getComputadora().setMemoria("16123123gb");
+        super.getComputadora().setMemoria("16gb");
     }
 
     @Override
@@ -21,17 +19,17 @@ public class I7 extends buildercompu{
 
     @Override
     public void buildVideo() {
-        super.getComputadora().setVideo("12312312318");
+        super.getComputadora().setVideo("8");
     }
 
     @Override
     public void buildMonitor() {
-        super.getComputadora().setMonitor("321231231232132");
+        super.getComputadora().setMonitor("32");
     }
 
     @Override
     public void buildTeclado() {
-        super.getComputadora().setTeclado("masdasdinosdasdasdasd");
+        super.getComputadora().setTeclado("Luminos");
     }
 
 
