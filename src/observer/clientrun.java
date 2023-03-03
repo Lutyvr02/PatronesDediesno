@@ -11,6 +11,7 @@ public class clientrun {
         client ma = new client("Maria", "41241241343 OR", 423423432);
         client ey = new client("Eynar", "13412412412 SC", 141241224);
 
+
         preciosLlamadas.addUser(ey);
         promociones.addUser(pe);
         promociones.addUser(ey);
