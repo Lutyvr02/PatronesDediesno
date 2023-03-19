@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Composite extends Component {
-    private List<Component> componentList =new ArrayList<>();
+    private int total;
+    private final List<Component> componentList =new ArrayList<>();
     public Composite(int precio) {
         super(precio);
     }
@@ -13,7 +14,9 @@ public class Composite extends Component {
     public void operacion() {
         for(Component component:componentList){
             component.operacion();
+            setPrecio(total+=component.getPrecio());
         }
+        System.out.println("El precio total de las computadoras sera de: "+getPrecio()+" dolares");
     }
 
     @Override

@@ -1,6 +1,7 @@
 package Composite.exercise;
 
 public abstract class Component {
+
     public int getPrecio() {
         return Precio;
     }
