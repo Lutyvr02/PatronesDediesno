@@ -13,24 +13,24 @@ public class ServerProxy implements IServer {
 
     @Override
     public void uploadUsuario(Usuario user) {
-        if (ty%2 == 0) {
+        if (ty%2==0) {
             System.out.println("El usuario: "+user.getNombreUser()+ ", con la contraseña: " + user.getPassword()+" " +
-                    "sera llevado al servidor (par) 2");
+                    "sera llevado al servidor (De pares) 2");
             this.ServidorPar.uploadUsuario(user);
         } else {
             System.out.println("El usuario: "+user.getNombreUser()+ ", con la contraseña: " + user.getPassword()+" " +
-                    "sera llevado al servidor (impar) 1");
+                    "sera llevado al servidor (De impares) 1");
             this.ServidorImpar.uploadUsuario(user);
         }
         ty++;
     }
 
-    public void showAllFile() {
-        System.out.println("Usuarios Guardados en el servidor1 (Impar) >>");
+    public void MostrarUsuario() {
+        System.out.println("Usuarios Guardados en el servidor 1 (Impares) >>");
         for (Usuario usuario : this.ServidorImpar.getAlmacen()) {
             usuario.show();
         }
-        System.out.println("Usuarios Guardados en el servidor2 (Par)>>");
+        System.out.println("Usuarios Guardados en el servidor 2 (pares)>>");
         for (Usuario usuario : this.ServidorPar.getAlmacen()) {
             usuario.show();
         }

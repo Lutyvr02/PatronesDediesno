@@ -2,8 +2,15 @@ package TareaParcial3.ej4;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
+
 
 public class ManejaUsuarios implements IServer {
+    private static final String PASSWORD_REGEX =
+            "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$";
+
+    private static final Pattern PASSWORD_PATTERN =
+            Pattern.compile(PASSWORD_REGEX);
         private String ipHostName;
         private String port;
         private String limitStorage;
@@ -40,12 +47,17 @@ public class ManejaUsuarios implements IServer {
         }
 
 
-        @Override
-        public void uploadUsuario(Usuario file) {
+    @Override
+    public void uploadUsuario(Usuario file) {
+        if (PASSWORD_PATTERN.matcher(file.getPassword()).matches()) {
             almacen.add(file);
             System.out.println();
             System.out.println("Usuario Guardado");
+        } else {
+            System.out.println();
+            System.out.println("El formato de la contraseña es incorrecto");
         }
+    }
 
         public void removeFile(Usuario user){
             almacen.remove(user);

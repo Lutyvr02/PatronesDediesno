@@ -1,5 +1,6 @@
 package TareaParcial3.ej4;
 public class Usuario {
+
     private String nombreUser;
     private String Password;
 
