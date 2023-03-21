@@ -1,4 +1,4 @@
-package proxy.example;
+package TareaParcial3.ej4;
 
 public class Client {
     public static void main (String []args){

@@ -1,4 +1,4 @@
-package Composite.exercise;
+package TareaParcial3.ej3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,17 +6,18 @@ import java.util.List;
 public class Composite extends Component {
     private int total;
     private final List<Component> componentList = new ArrayList<>();
-    public Composite(int precio) {
-        super(precio);
+    public Composite(int CantidadDePalabras) {
+        super(CantidadDePalabras);
     }
 
     @Override
     public void operacion() {
         for(Component component:componentList){
             component.operacion();
-            setPrecio(total+=component.getPrecio());
+            setCantidadDePalabras(total+=component.getCantidadDePalabras());
         }
-        System.out.println("El precio total de las computadoras sera de: "+getPrecio()+" dolares");
+
+        System.out.println("La cantidad de palabras totales es: "+ getCantidadDePalabras());
     }
 
     @Override
